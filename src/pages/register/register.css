@@ -1,0 +1,38 @@
+
+.containerPassword{  
+  width: 90%;
+  min-width: 40%;
+  margin: 20px 10px 0 0;
+  padding: 6px 10px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border: 1px solid gray;
+  display: inline-flex;
+  border-radius: 2%;
+}
+
+.outerDiv{
+    flex: 1;  
+}
+
+.inputRegular{
+    width: 90%;
+    min-width: 40%;
+    margin: 20px 10px 0 0;
+    padding: 10px;
+}
+
+.password{
+    border: none;
+    width: 100%;
+    height: 100%;   
+}
+.password:focus {
+    outline: none;
+}
+
+.pColor{
+    color: red;
+    padding-top: 5px;
+}

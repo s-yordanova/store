@@ -1,0 +1,23 @@
+.inputAccount{
+    border: none;
+    width: 250px;
+    height: 20px;
+    padding-bottom: 4px;
+    grid-template: 30px;
+    border-bottom: 1px solid gray;
+}
+
+.inputAccount:focus{
+    outline: none;
+}
+
+.inputPassword{
+    border: none;
+    width: 250px;
+    height: 18px;
+    grid-template: 30px;
+}
+
+.inputPassword:focus{
+    outline: none;
+}
