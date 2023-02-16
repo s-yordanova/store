@@ -17,8 +17,8 @@ const Products = ({mainCat,cat,filters,sort}) => {
   useEffect(()=>{
     const getProducts = async () => {
       try{
-        const res = await axios.get(cat ? `http://localhost:5000/api/products/${mainCat}/?category[]=${cat}&category[]=${mainCat}` 
-        : "http://localhost:5000/api/products/p" );
+        const res = await axios.get(cat ? `${process.env.REACT_APP_API_URL}/products/${mainCat}/?category[]=${cat}&category[]=${mainCat}` 
+        : `${process.env.REACT_APP_API_URL}/products/p` );
         setProducts(
           res.data.filter((item) => {
             return item.inStock && item.quantity > 0;
